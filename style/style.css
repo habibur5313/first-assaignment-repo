@@ -1,4 +1,8 @@
-body{}
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+body{font-family: "Azeret Mono", monospace;
+                    font-optical-sizing: auto;
+                    font-weight: <weight>;
+                    font-style: normal;}
 .head{display: flex;
 justify-content: space-around;}
 .head h1{color: rgb(13, 19, 33);
@@ -178,6 +182,7 @@ text-align: center; margin: 0 auto;}
 
 .current-target{display: flex; gap: 24px;}
 .current-target .html{padding: 40px; background-color: rgba(255, 76, 30, 0.05); border-radius: 16px;}
+
 .current-target .css{padding: 40px; background-color: rgba(0, 76, 232, 0.05); border-radius: 16px;}
 .current-target .js{padding: 40px; background-color:rgba(255, 223, 0, 0.06) ; border-radius: 16px;}
 
@@ -200,7 +205,11 @@ margin: 0 auto; margin-top: 111px; text-align: center;}
 .feedback-container{width: 1140px;
                     height: 313px;
 margin: 0 auto; margin-top: 40px;
-background-image: url(../assets/handshake.jpg)}
+background-image: url(../assets/handshake.jpg);
+background-color: rgba(0,0,0,0.5);
+background-blend-mode: overlay;
+background-position: center;
+background-repeat: no-repeat;}
 .feedback-content{display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
 .feedback-content h1{text-align: center; color: rgb(255, 255, 255);
                     font-family: Azeret Mono;
@@ -212,19 +221,27 @@ margin-top: 64px;}
                     font-size: 16px;
                     font-weight: 400;opacity: 0.7;
 }
-.feedback-content .suggest input{box-sizing: border-box;
+.feedback-content input{box-sizing: border-box;
                     border: 1px solid rgba(13, 19, 33, 0.15);
-                    border-radius: 8px;
+                    border-radius: 8px width: 1140px;
+                    height: 36px; color: rgba(13, 19, 33, 0.4);
+                    font-family: Azeret Mono;
+                    font-size: 16px;
+                    font-weight: 400;;
                     
                     background: rgb(255, 255, 255);}
- .feedback-content .suggest button{olor: rgb(13, 19, 33);
+ .feedback-content button{color: rgb(13, 19, 33);
                     font-family: Azeret Mono;
                     font-size: 20px;
                     font-weight: 600; width: 120px;
                     height: 57px; border-radius: 8px;
                     background: rgb(255, 255, 255);}
 
-footer{display: flex; justify-content: space-between; width: 1140px;
-                    height: 36px; margin: 0 auto;}
-footer h1{margin-top: 110px;}
-footer .img{margin-top: 110px;}
+.footer-container {display: flex; justify-content: space-between; width: 1140px;
+                    height: 36px; margin: 0 auto; width: 1440px;
+                    height: 100px; border-radius: 16px;
+
+                    background: rgba(13, 19, 33, 0.03);
+margin-top: 80px;}
+footer h1{margin-top: 30px;}
+footer .img{ margin-top: 30px;}
